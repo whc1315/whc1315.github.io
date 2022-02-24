@@ -92,22 +92,7 @@ h4 {
   font-size: 20px;
 }
 
-.newslatter form {
-  width: 380px;
-  max-width: 100%;
-  position: relative;
-}
-
-.newslatter form input:first-child {
-  display: inline-block;
-  width: 100%;
-  padding: 14px 130px 14px 15px;
-  border: 2px solid rgb(60, 83, 39);
-  outline: none;
-  border-radius: 30px;
-}
-
-.newslatter form input:last-child {
+.newslatter .newsletter {
   position: absolute;
   display: inline-block;
   outline: none;
@@ -117,8 +102,14 @@ h4 {
   background-color: rgb(60, 83, 39);
   color: white;
   box-shadow: 0px 0px 5px black, 0px 0px 15px black;
-  top: 6px;
-  right: 6px;
+  text-decoration: none;
+}
+
+.newsletter:hover {
+  background-color: rgb(243, 209, 146);
+  border: 2px solid rgb(60, 83, 39);
+  color: black;
+  cursor: pointer;
 }
 
 .about {
@@ -168,7 +159,7 @@ h4 {
   margin-bottom: 45px;
 }
 
-button {
+.button {
   background-color: rgb(60, 83, 39);
   color: white;
   text-decoration: none;
@@ -176,11 +167,15 @@ button {
   font-weight: bold;
   padding: 13px 30px;
   border-radius: 30px;
+  cursor: pointer;
   transition: transform 0.4s;
 }
 
-button:hover {
-  transform: scale(1.25);
+.button:hover {
+  background-color: transparent;
+  border: 2px solid rgb(60, 83, 39);
+  color: black;
+  cursor: pointer;
 }
 
 .skills {
@@ -262,6 +257,16 @@ button:hover {
   overflow: hidden;
   text-align: center;
   font-size: 36px;
+}
+
+.lcc {
+  color: black;
+  text-decoration: none;
+}
+
+.lcc:hover {
+  color: rgb(60, 83, 39);
+  text-decoration: underline;
 }
 
 .contact-me {
